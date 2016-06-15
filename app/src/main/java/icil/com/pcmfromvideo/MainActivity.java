@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String video = Environment.getExternalStorageDirectory() + "input.mp4";
+                String video = Environment.getExternalStorageDirectory() + "/input.mp4";
                 String audio = Environment.getExternalStorageDirectory() + "/output.pcm";
 
                 mAudioFromVideo = new AudioFromVideo(video,audio);
